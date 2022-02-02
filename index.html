@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zoom with Magnifying Glass using CSS and jQuery</title>
+	<meta charset="utf-8">
+	
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Lets make a simple image magnifier -->
+	<div class="magnify">
+		
+		<!-- This is the magnifying glass which will contain the original/large version -->
+		<div class="large"></div>
+		
+		<!-- This is the small image -->
+		<!-- Normally, this image is 2308 x 1476 (large image dimensions)
+		     but here we are shrinking it to be displayed at 600 pixels wide -->
+		<img class="small" src="images/Galgenberg_orig.jpg" width="600">
+		<!--<img class="small" src="http://thecodeplayer.com/uploads/media/iphone.jpg" width="200">-->
+		
+	</div>
+
+	<!-- Lets load up prefixfree to handle CSS3 vendor prefixes -->
+	<!--<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>-->
+	<!-- You can download it from http://leaverou.github.com/prefixfree/ -->
+
+	<!-- Time for jquery action - access scripts here -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+	<script src="js/magnify.js"></script>
+	
+
+</body>
+</html>
